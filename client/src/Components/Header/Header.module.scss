@@ -1,0 +1,66 @@
+.header {
+    position: absolute;
+    display: flex;
+    left: 50vw;
+    transform: translate(-50%);
+    justify-content: space-between;
+    flex-direction: row;
+    width: 75vw;
+    min-width: 44rem;
+    height: 6rem;
+    border-bottom: 1px solid rgb(185, 185, 185);
+
+    &__div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__logo {
+        height: 1.5rem;
+        margin-right: 2rem;
+        cursor: pointer;
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 1.5rem;
+        list-style: none;
+        height: 100%;
+
+        li {
+            height: 60%;
+
+
+            font-size: 1.1rem;
+            color: grey;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+
+            &:hover {
+                border-bottom: 2px solid orange;
+            }
+        }
+    }
+
+    &__cart {
+        height: 1.3em;
+        margin-right: 3rem;
+        cursor: pointer;
+    }
+
+    &__avatar {
+        height: 3.2rem;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 2px solid transparent;
+
+        &:hover {
+            border-radius: 50%;
+            border: 2px solid orange;
+        }
+    }
+}
